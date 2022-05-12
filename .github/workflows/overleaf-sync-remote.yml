@@ -17,6 +17,8 @@ jobs:
         uses: BSFishy/pip-action@v1
         with:
           packages: overleaf-sync
+      
+      - name: add compulsory packages
         run: |
           sudo apt-get install libxcb-xinerama0
       
