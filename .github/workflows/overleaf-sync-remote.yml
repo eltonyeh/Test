@@ -19,10 +19,7 @@ jobs:
           packages: overleaf-sync
       
       - name: add compulsory packages
-        run: |
-          vim ~/.bashrc
-          export QT_DEBUG_PLUGINS=1
-          source ~/.bashrc
+        run: sudo apt-get -qq install libxcb-xinerama0 pyqt5-dev-tools
       
       - name: Sync files to Overleaf
         run: |
