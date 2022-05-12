@@ -20,7 +20,9 @@ jobs:
       
       - name: add compulsory packages
         run: |
-          sudo apt-get install libxcb-xinerama0
+          vim ~/.bashrc
+          export QT_DEBUG_PLUGINS=1
+          source ~/.bashrc
       
       - name: Sync files to Overleaf
         run: |
