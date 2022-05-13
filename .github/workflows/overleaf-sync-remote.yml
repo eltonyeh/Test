@@ -16,10 +16,9 @@ jobs:
       - name: Set up the pip package
         uses: BSFishy/pip-action@v1
         with:
-          packages: overleaf-sync
-      
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v2
+          packages: |
+            overleaf-sync
+            opencv-python==4.1.2.30
       
       - name: Sync files to Overleaf
         run: |
