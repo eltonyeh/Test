@@ -18,8 +18,8 @@ jobs:
         with:
           packages: overleaf-sync
       
-      - name: add compulsory packages
-        run: sudo apt-get -qq install libxcb-xinerama0 pyqt5-dev-tools
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v2
       
       - name: Sync files to Overleaf
         run: |
